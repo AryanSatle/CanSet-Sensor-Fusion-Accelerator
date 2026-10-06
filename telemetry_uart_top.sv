@@ -19,9 +19,7 @@ logic [7:0] packet_byte;
 logic send;
 logic busy;
 logic baud_tick;
-
 // Baud Generator
-
 baud_generator baud_gen(
 
     .clk(clk),
@@ -29,9 +27,7 @@ baud_generator baud_gen(
     .baud_tick(baud_tick)
 
 );
-
 // Packet Index Counter
-
 always_ff @(posedge clk or posedge rst)
 begin
 
@@ -49,9 +45,7 @@ begin
     end
 
 end
-
 // Packet Formatter
-
 always_comb
 begin
 
@@ -70,11 +64,7 @@ begin
 
 end
 
-// Send whenever UART is idle
-
 assign send = ~busy;
-
-// UART Transmitter
 
 uart_tx_fsm uart(
 
