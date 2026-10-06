@@ -23,6 +23,7 @@ The project covers the flow from:
 RTL Design → Verification → Physical Design → GDSII
 
 Author
+
 Aryan Kumar Satle
 VLSI / Electronics Engineering Student
 Interested in VLSI Design, Digital Hardware, ASIC Design, and Computer Architecture.
